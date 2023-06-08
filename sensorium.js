@@ -15,6 +15,10 @@ const shapeStrings = [
   "X,X,|X,,|,U,R/X,B,X|L,X,X|X,,6F/X,X,|X,,X|,X,X",
   "1F,X,X|,U,X|,,4L/R,,B|X,X,R|5U,X,X/X,X,|X,X,X|,,"
 ];
+const labels = [
+  "4 top left","4 top middle","4 top right","4 bottom left","4 bottom middle","5 left","5 right",
+  "6 left","6 right","7","8 left","8 right","9 left","9 right",
+];
 const shapes = shapeStrings.map(cube => (
   cube.split("/").map(sheet => (
     sheet.split("|").map(row => row.split(","))
@@ -31,10 +35,7 @@ function preload() {
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight, WEBGL);
   createEasyCam();
-  textSize(40);
-  textFont('Helvetica');
-  textAlign(CENTER);
-  // document.oncontextmenu = ()=>false;
+  document.oncontextmenu = ()=>false;
 }
 
 const side = 60;
@@ -46,6 +47,7 @@ function keyPressed() {
   } else if (keyCode == RIGHT_ARROW) {
     shapeIdx = (shapeIdx+1) % shapeStrings.length;
   }
+  document.getElementById("label").innerText = labels[shapeIdx];
 }
 
 function draw() {

@@ -8,3 +8,10 @@ canvas {
   display: block;
   margin: auto;
 }
+div {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+  font-size: 20px;
+}
