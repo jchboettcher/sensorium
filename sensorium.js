@@ -10,7 +10,7 @@ const shapeStrings = [
   "U,X,B|,X,|,,/X,X,|,L,|,,/,R,|X,X,X|,4F;5U,",
   ",,|U,,|,,/X,X,B|X,X,X|2R,,/,X,X|L,X,X|,,F",
   "X,X,|X,F,X|,,X/X,,B|X,,|,,X/X,X,X|,X,X|,X,",
-  ",,|3U,,X|,,6R;U/X,X,F|X,X,|,X,6R/X,X,|L,X,X|,,F",
+  ",,|3U,,X|,,6L;U/X,X,F|X,X,|,X,6R/X,X,|L,X,X|,,F",
   "X,X,R|X,U,|X,,/X,X,|L,X,|X,X,X/,X,|X,X,3B|,F,",
   "X,X,|X,,|,U,R/X,B,X|L,X,X|X,,6F/X,X,|X,,X|,X,X",
   "1F,X,X|,U,X|,,4L/R,,B|X,X,R|5U,X,X/X,X,|X,X,X|,,"
